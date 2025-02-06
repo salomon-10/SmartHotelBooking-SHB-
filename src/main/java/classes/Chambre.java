@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import static classes.Clients.sc;
-import static classes.Reservation.op;
 
 public  class Chambre {
     static Scanner sc = new Scanner(System.in);
@@ -122,11 +121,11 @@ public  class Chambre {
                             ", Prix: " + chambre.getPrix() + "fcfa");
                     disponible = true;
                 }
+                if (!disponible) {
+                    System.out.println("Aucune chambre disponible.");
+                }
             }
 
-            if (!disponible) {
-                System.out.println("Aucune chambre disponible.");
-            }
 
             }
 

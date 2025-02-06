@@ -81,6 +81,7 @@ public class Main {
                 case 1:
                     System.out.print("Entrez l'ID du client : ");
                     int id = scanner.nextInt();
+                    scanner.nextLine();
 
                     System.out.print("Entrez le nom du client : ");
                     String username = scanner.nextLine();
@@ -119,6 +120,7 @@ public class Main {
                 case 1:
                     System.out.print("Entrez le nom du client : ");
                     String Name = scanner.nextLine();
+                    scanner.nextLine();
 
                     System.out.print("Entrez le numéro de la chambre à réserver : ");
                     int chambreNumero = scanner.nextInt();
@@ -128,7 +130,7 @@ public class Main {
                 case 2:
                     System.out.print("Entrez le nom du client pour annuler la réservation : ");
                     String name = scanner.nextLine();
-
+                    scanner.nextLine();
                     System.out.print("Entrez le numéro de la chambre : ");
                     int chambre = scanner.nextInt();
 
